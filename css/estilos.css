@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+}
+
+header {
+  background: #1C3643;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
