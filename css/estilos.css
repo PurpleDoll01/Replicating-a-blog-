@@ -12,24 +12,54 @@ header {
   padding: 0 10px;
 }
 
-nav {
+.header-right {
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
 
+.button {
+  background: gray;
+  border-bottom: 5px solid black;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  transition: .2s;
+}
+
+.button:active {
+  transform: scale(.9);
+}
+
+.button.red {
+  background: #ff4B42;
+  border-color: yellow;
+}
+
+nav {
+  height: inherit;
 }
 
 nav ul {
+  margin: 0;
   display: flex;
+  height: inherit;
 }
 
 nav li {
   list-style: none;
   /* margin: 0 10px; */
   color: white;
+  height: inherit;
+  display: flex;
+  align-items: center;
 }
 
 nav li:after {
   content: "|";
   display: inline-block;
-  margin: 0 10px;
 }
 
 nav li:last-child:after {
@@ -39,6 +69,20 @@ nav li:last-child:after {
 nav a {
   color: white;
   text-decoration: none;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  /* border-top: 5px solid transparent;  */
+  padding: 0 10px;
+}
+
+nav a:hover {
+  /* border-top: 5px solid #ff4B42; */
+  box-shadow: inset 0 5px 0 #ff4B42;
+}
+
+nav a.is-active {
+  box-shadow: inset 0 5px 0 green;
 }
 
 h1 {
@@ -47,7 +91,7 @@ h1 {
 }
 
 .portada {
-  /* border: 10px solid red; */
+  /* border: 10px solid #ff4B42; */
   position: relative;
 }
 
